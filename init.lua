@@ -14,7 +14,7 @@ export type Signal<A...> = {
 	Wait:					(self: Signal<A...>) -> A...,
 	Once:					(self: Signal<A...>, func: (A...) -> ()) -> Connection<A...>,
 	Connect: 				(self: Signal<A...>, func: (A...) -> ()) -> Connection<A...>,
-	DisconnectAll: 			        (self: Signal<A...>) -> (),
+	DisconnectAll: 			(self: Signal<A...>) -> (),
 	_next:					Connection<A...>?,
 }
 
